@@ -3,30 +3,45 @@
   padding: 0;
   margin: 0;
 }
+/*.mainwrapper {
+  margin: 0;
+  display: flex;
+  font-family: "sans-serif";
+  width: 100%;
+  height: 100%;
+}*/
 header {
-  padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /*padding: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", "Arial", "sans-serif";
+    "Lucida Sans", "Arial", "sans-serif";*/
   background-color: #1bbbb3;
   color: black;
   font-size: 20px;
 }
 
 .header h1 {
-  display: inline-block;
+  display: block;
+  position: relative;
+  text-align: left;
   font-size: 45px;
   font-weight: bold;
-  position: relative;
+  overflow: hidden;
 }
 
 header .topnav {
   overflow: hidden;
+  display: flex;
+  text-align: right;
 }
 
 header .topnav a {
+  display: flex;
   position: relative;
   color: black;
-  text-align: center;
+  text-align: right;
   padding: 25px;
   text-decoration: initial;
   font-size: 20px;
@@ -45,6 +60,7 @@ header .topnav a.active {
   background-color: #04aa6d;
   color: white;
   font-weight: bold;
+  border-bottom: 3px solid red;
 }
 
 .header1 {
@@ -65,16 +81,21 @@ header .topnav a.active {
   );
   background-size: 56.57px 56.57px;
 }
+.header1 img {
+  display: flex;
+  position: relative;
+  text-align: left;
+}
 .header1 h1 {
   font-size: 20px;
   color: blue;
   text-align: right;
   position: relative;
-  bottom: 0;
-  left: 0;
+  bottom: 10%;
+  left: 0%;
 }
-.secondsection {
-  background-color: lightgray;
+.maincontainer {
+  background-color: rgb(129, 165, 206);
   margin-block: 10px;
   margin-left: 3px;
   margin-right: 3px;
@@ -87,15 +108,66 @@ header .topnav a.active {
   width: 100%;
   height: 100%;
 }
-.aboutme {
-  /*background-color: white;*/
+
+/*.mainsection {
+  background-color: lightgray;
+  margin-block: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  float: left;
   position: absolute;
+  z-index: 1;
+  align-self: flex-start;
+  flex-direction: row-reverse;
+  padding: 6.25rem 0 6.25rem 4.5rem;
+  width: 100%;
+  height: 100%;
+}*/
+
+/*.aboutme {
+  position: relative;
   font-size: 20px;
-}
+}*/
 .aboutme h1 {
+  position: relative;
   font-size: 60px;
 }
-#sectioncontent1 {
+.aboutme .vl1 {
+  display: flex;
+  border-left: 6px solid green;
+  height: 320px;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+  top: 10px;
+}
+#firstcontent {
+  display: flex;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  background-color: rgba(233, 239, 241, 0.74);
+  color: black;
+  font-size: 20px;
+  text-align: top;
+  position: absolute;
+  top: 25px;
+  left: 380px;
+  width: 1400px;
+  height: 280px;
+}
+
+.work {
+  /*background-color: white;*/
+  position: relative;
+  font-size: 28px;
+}
+.work .h1 {
+  position: relative;
+  font-size: 60px;
+}
+
+#secondcontent {
   float: top;
   padding: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -111,7 +183,8 @@ header .topnav a.active {
   height: 280px;
   border: 3px solid #73ad21;
 }
-.vl1 {
+.vl2 {
+  display: flex;
   border-left: 6px solid green;
   height: 320px;
   position: absolute;
