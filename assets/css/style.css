@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #1bbbb3;
+  color: black;
+  font-size: 20px;
+}
+
+.header h1 {
+  display: block;
+  position: relative;
+  text-align: left;
+  font-size: 45px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+header .topnav {
+  display: block;
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+}
+
+header .topnav a {
+  color: black;
+  text-align: right;
+  padding: 25px;
+  text-decoration: initial;
+  font-size: 20px;
+  float: inline-end;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+header .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-bottom: 3px solid red;
+}
+/* Add a color to the active/current link */
+header .topnav a.active {
+  background-color: #353538;
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid red;
+  border-radius: 3px;
+}
+
+.mainwrapper {
+  display: block;
+  background-color: lightgray;
+}
+
+.header1 {
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  border: 2px solid black;
+  width: 100%;
+  background-image: linear-gradient(
+    45deg,
+    #8da3cd 25%,
+    #778899 25%,
+    #778899 50%,
+    #8db0cd 50%,
+    #98cd8d 75%,
+    #778899 75%,
+    #778899 100%
+  );
+  background-size: 58.57px 58.57px;
+}
+.header1 img {
+  display: flex;
+  position: relative;
+  text-align: left;
+}
+.header1 h1 {
+  display: inline-block;
+  font-size: 29px;
+  color: blue;
+  text-align: right;
+  width: 100%;
+  padding: 100;
+}
+.firstcontainer {
+  width: 100%;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutme h1 {
+  font-size: 60px;
+}
+.aboutme .vl1 {
+  display: flex;
+  border-left: 6px solid green;
+  height: 320px;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+  top: 06px;
+}
+#firstcontent {
+  padding: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  color: black;
+  font-size: 20px;
+}
+.secondcontainer {
+  display: block;
+  background-color: rgb(129, 165, 206);
+  margin-block: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: absolute;
+  flex-direction: row-reverse;
+  padding: 7.25rem 0 6.25rem 4.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.work h1 {
+  text-align: left;
+  font-size: 60px;
+}
+.work .vl2 {
+  display: flex;
+  border-left: 6px solid green;
+  height: 320px;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+  top: 10px;
+}
+#secondcontent {
+  display: block;
+  margin-left: 0px;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  background-color: rgba(233, 239, 241, 0.74);
+  color: black;
+  font-size: 20px;
+  text-align: top;
+  position: absolute;
+  top: 25px;
+  left: 380px;
+  width: 1400px;
+  height: 280px;
+}
+
+.header-container {
+  min-width: 150px;
+  margin: 20px;
+  text-align: end;
+  border-right: 5px solid black;
+}
+
+.header-text {
+  font-size: 36px;
+  padding-right: 20px;
+}
+
+.work-content {
+  width: 100%;
+  height: 100%;
+}
+
+.work-content > * {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.big-box {
+  min-height: 400px;
+  background-image: url("jonas-elia-pv-U1L8-hHY-unsplash.jpg");
+}
+
+.small-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small-box {
+  height: 150px;
+  width: 49%;
+  background-image: url("ledImage.jpg");
+}
+
+.inner-box {
+  width: 50%;
+  position: relative;
+  top: -100px;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+.blue-boder {
+  border: 5px solid lightblue;
+}
+
+.main-inner-box {
+  width: 50%;
+  position: absolute;
+  top: 1000px;
+  background-color: lightblue;
+  padding: 15px;
+}
+.work-content .blue-boder .big-box .img {
+  width: 100%;
+}
+
+.small-box-container .blue-boder .small-box .img {
+  width: 100%;
+}
+.contact {
+  min-width: 150px;
+  margin: 20px;
+  text-align: end;
+  border-right: 5px solid black;
+}
+.contact-container {
+  display: flex;
+  text-align: right;
+  padding: 25px;
+  text-decoration: initial;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
