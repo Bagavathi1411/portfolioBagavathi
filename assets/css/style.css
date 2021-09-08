@@ -3,20 +3,10 @@
   padding: 0;
   margin: 0;
 }
-/*.mainwrapper {
-  margin: 0;
-  display: flex;
-  font-family: "sans-serif";
-  width: 100%;
-  height: 100%;
-}*/
 header {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /*padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", "Arial", "sans-serif";*/
   background-color: #1bbbb3;
   color: black;
   font-size: 20px;
@@ -32,20 +22,23 @@ header {
 }
 
 header .topnav {
-  overflow: hidden;
-  display: flex;
+  display: block;
+  position: relative;
   text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
 }
 
 header .topnav a {
-  display: flex;
-  position: relative;
   color: black;
   text-align: right;
   padding: 25px;
   text-decoration: initial;
   font-size: 20px;
-  float: right;
+  float: inline-end;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -57,10 +50,16 @@ header .topnav a:hover {
 }
 /* Add a color to the active/current link */
 header .topnav a.active {
-  background-color: #04aa6d;
+  background-color: #353538;
   color: white;
   font-weight: bold;
   border-bottom: 3px solid red;
+  border-radius: 3px;
+}
+
+.mainwrapper {
+  display: block;
+  background-color: lightgray;
 }
 
 .header1 {
@@ -79,7 +78,7 @@ header .topnav a.active {
     #778899 75%,
     #778899 100%
   );
-  background-size: 56.57px 56.57px;
+  background-size: 58.57px 58.57px;
 }
 .header1 img {
   display: flex;
@@ -87,49 +86,23 @@ header .topnav a.active {
   text-align: left;
 }
 .header1 h1 {
-  font-size: 20px;
+  display: inline-block;
+  font-size: 29px;
   color: blue;
   text-align: right;
-  position: relative;
-  bottom: 10%;
-  left: 0%;
-}
-.maincontainer {
-  background-color: rgb(129, 165, 206);
-  margin-block: 10px;
-  margin-left: 3px;
-  margin-right: 3px;
-  float: left;
-  position: absolute;
-  z-index: 1;
-  align-self: flex-start;
-  flex-direction: row-reverse;
-  padding: 6.25rem 0 6.25rem 4.5rem;
   width: 100%;
-  height: 100%;
+  padding: 100;
+}
+.firstcontainer {
+  width: 100%;
 }
 
-/*.mainsection {
-  background-color: lightgray;
-  margin-block: 10px;
-  margin-left: 3px;
-  margin-right: 3px;
-  float: left;
-  position: absolute;
-  z-index: 1;
-  align-self: flex-start;
-  flex-direction: row-reverse;
-  padding: 6.25rem 0 6.25rem 4.5rem;
-  width: 100%;
-  height: 100%;
-}*/
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+}
 
-/*.aboutme {
-  position: relative;
-  font-size: 20px;
-}*/
 .aboutme h1 {
-  position: relative;
   font-size: 60px;
 }
 .aboutme .vl1 {
@@ -139,10 +112,44 @@ header .topnav a.active {
   position: absolute;
   left: 20%;
   margin-left: -3px;
-  top: 10px;
+  top: 06px;
 }
 #firstcontent {
+  padding: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", "Arial", "sans-serif";
+  color: black;
+  font-size: 20px;
+}
+.secondcontainer {
+  display: block;
+  background-color: rgb(129, 165, 206);
+  margin-block: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+  position: absolute;
+  flex-direction: row-reverse;
+  padding: 7.25rem 0 6.25rem 4.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.work h1 {
+  text-align: left;
+  font-size: 60px;
+}
+.work .vl2 {
   display: flex;
+  border-left: 6px solid green;
+  height: 320px;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+  top: 10px;
+}
+#secondcontent {
+  display: block;
+  margin-left: 0px;
   padding: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", "Arial", "sans-serif";
@@ -157,38 +164,83 @@ header .topnav a.active {
   height: 280px;
 }
 
-.work {
-  /*background-color: white;*/
-  position: relative;
-  font-size: 28px;
-}
-.work .h1 {
-  position: relative;
-  font-size: 60px;
+.header-container {
+  min-width: 150px;
+  margin: 20px;
+  text-align: end;
+  border-right: 5px solid black;
 }
 
-#secondcontent {
-  float: top;
-  padding: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", "Arial", "sans-serif";
-  background-color: whitesmoke;
-  color: black;
-  font-size: px;
-  text-align: justify;
-  position: absolute;
-  top: -80px;
-  left: 300px;
-  width: 1400px;
-  height: 280px;
-  border: 3px solid #73ad21;
+.header-text {
+  font-size: 36px;
+  padding-right: 20px;
 }
-.vl2 {
+
+.work-content {
+  width: 100%;
+  height: 100%;
+}
+
+.work-content > * {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.big-box {
+  min-height: 400px;
+  background-image: url("jonas-elia-pv-U1L8-hHY-unsplash.jpg");
+}
+
+.small-box-container {
   display: flex;
-  border-left: 6px solid green;
-  height: 320px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small-box {
+  height: 150px;
+  width: 49%;
+  background-image: url("ledImage.jpg");
+}
+
+.inner-box {
+  width: 50%;
+  position: relative;
+  top: -100px;
+  background-color: lightblue;
+  padding: 15px;
+}
+
+.blue-boder {
+  border: 5px solid lightblue;
+}
+
+.main-inner-box {
+  width: 50%;
   position: absolute;
-  left: 20%;
-  margin-left: -3px;
-  top: 0;
+  top: 1000px;
+  background-color: lightblue;
+  padding: 15px;
+}
+.work-content .blue-boder .big-box .img {
+  width: 100%;
+}
+
+.small-box-container .blue-boder .small-box .img {
+  width: 100%;
+}
+.contact {
+  min-width: 150px;
+  margin: 20px;
+  text-align: end;
+  border-right: 5px solid black;
+}
+.contact-container {
+  display: flex;
+  text-align: right;
+  padding: 25px;
+  text-decoration: initial;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
 }
