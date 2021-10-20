@@ -45,7 +45,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 My project web page: https://bagavathi1411.github.io/portfolioBagavathi/
 
-![My Project webpage ](assets/images/bagavathiPortfolio.png)
+![My Project webpage ](assets/images/profilepage.jpg)
 
 # ## License
 
